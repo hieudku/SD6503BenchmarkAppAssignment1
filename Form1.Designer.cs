@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnLoad = new System.Windows.Forms.Button();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.stsStatus = new System.Windows.Forms.StatusStrip();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.loadAndToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,7 +68,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.lstStaff = new System.Windows.Forms.ListBox();
-            this.statusStrip1.SuspendLayout();
+            this.tslStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.ttpToolTips = new System.Windows.Forms.ToolTip(this.components);
+            this.stsStatus.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -83,25 +85,20 @@
             this.btnLoad.Size = new System.Drawing.Size(148, 57);
             this.btnLoad.TabIndex = 0;
             this.btnLoad.Text = "Load";
+            this.ttpToolTips.SetToolTip(this.btnLoad, "Load a list of existing staff record");
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
-            // statusStrip1
+            // stsStatus
             // 
-            this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 910);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1886, 32);
-            this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(179, 25);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            this.stsStatus.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.stsStatus.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tslStatus});
+            this.stsStatus.Location = new System.Drawing.Point(0, 910);
+            this.stsStatus.Name = "stsStatus";
+            this.stsStatus.Size = new System.Drawing.Size(1886, 32);
+            this.stsStatus.TabIndex = 2;
+            this.stsStatus.Text = "statusStrip1";
             // 
             // menuStrip1
             // 
@@ -197,6 +194,7 @@
             this.btnSortZA.Size = new System.Drawing.Size(148, 57);
             this.btnSortZA.TabIndex = 6;
             this.btnSortZA.Text = "Sort Z to A";
+            this.ttpToolTips.SetToolTip(this.btnSortZA, "Sort staff by name in ascending order");
             this.btnSortZA.UseVisualStyleBackColor = true;
             this.btnSortZA.Click += new System.EventHandler(this.btnSortZA_Click);
             // 
@@ -207,6 +205,7 @@
             this.btnSortAZ.Size = new System.Drawing.Size(148, 57);
             this.btnSortAZ.TabIndex = 5;
             this.btnSortAZ.Text = "Sort A to Z";
+            this.ttpToolTips.SetToolTip(this.btnSortAZ, "Sort staff by name in descending order");
             this.btnSortAZ.UseVisualStyleBackColor = true;
             this.btnSortAZ.Click += new System.EventHandler(this.btnSortAZ_Click);
             // 
@@ -216,6 +215,7 @@
             this.tbxSearch.Name = "tbxSearch";
             this.tbxSearch.Size = new System.Drawing.Size(268, 26);
             this.tbxSearch.TabIndex = 5;
+            this.ttpToolTips.SetToolTip(this.tbxSearch, "Enter keyword to search for staff from record");
             // 
             // groupBox2
             // 
@@ -235,6 +235,7 @@
             this.btnSearch.Size = new System.Drawing.Size(148, 57);
             this.btnSearch.TabIndex = 16;
             this.btnSearch.Text = "Search";
+            this.ttpToolTips.SetToolTip(this.btnSearch, "Search based on keyword entered");
             this.btnSearch.UseVisualStyleBackColor = true;
             this.btnSearch.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -292,6 +293,7 @@
             this.btnSave.Size = new System.Drawing.Size(148, 57);
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Save";
+            this.ttpToolTips.SetToolTip(this.btnSave, "Save selected staff into text file");
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -302,6 +304,7 @@
             this.btnAdd.Size = new System.Drawing.Size(148, 57);
             this.btnAdd.TabIndex = 15;
             this.btnAdd.Text = "Add";
+            this.ttpToolTips.SetToolTip(this.btnAdd, "Add to current record list to view (not saved yet)");
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -395,6 +398,7 @@
             this.btnDelete.Size = new System.Drawing.Size(148, 57);
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Delete Selected";
+            this.ttpToolTips.SetToolTip(this.btnDelete, "Remove selected staff from record and list");
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -452,6 +456,12 @@
             this.lstStaff.Size = new System.Drawing.Size(627, 584);
             this.lstStaff.TabIndex = 1;
             // 
+            // tslStatus
+            // 
+            this.tslStatus.Name = "tslStatus";
+            this.tslStatus.Size = new System.Drawing.Size(60, 25);
+            this.tslStatus.Text = "Ready";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -461,13 +471,13 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.stsStatus);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
+            this.stsStatus.ResumeLayout(false);
+            this.stsStatus.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -485,8 +495,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnLoad;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.StatusStrip stsStatus;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem loadAndToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadToolStripMenuItem;
@@ -524,6 +533,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ListBox lstStaff;
+        private System.Windows.Forms.ToolStripStatusLabel tslStatus;
+        private System.Windows.Forms.ToolTip ttpToolTips;
     }
 }
 
