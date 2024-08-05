@@ -8,18 +8,14 @@ namespace SD6503BenchmarkAppAssignment1
 {
     public class MyClass
     {
+        // Properties
         public int StaffId { get; set; }
         public string Name { get; set; }
         public DateTime DateOfBirth { get; set; }
         public string Email { get; set; }
         public decimal AnnualSalary { get; set; }
 
-        // Constructor
-        public MyClass()
-        {
-            
-        }
-
+        // Convert class object into string to display data
         public override string ToString()
         {
             return $"{StaffId}                {Name}       {DateOfBirth:yyyy-MM-dd}   {Email}    {AnnualSalary}";

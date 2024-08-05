@@ -93,7 +93,7 @@
             this.toolStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 910);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1768, 32);
+            this.statusStrip1.Size = new System.Drawing.Size(1886, 32);
             this.statusStrip1.TabIndex = 2;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -105,13 +105,14 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadAndToolStripMenuItem,
             this.saveAndSearchToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1768, 33);
+            this.menuStrip1.Size = new System.Drawing.Size(1886, 33);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -128,20 +129,23 @@
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.loadToolStripMenuItem.Text = "Load";
+            this.loadToolStripMenuItem.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // sortAToZToolStripMenuItem
             // 
             this.sortAToZToolStripMenuItem.Name = "sortAToZToolStripMenuItem";
-            this.sortAToZToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
+            this.sortAToZToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.sortAToZToolStripMenuItem.Text = "Sort A to Z";
+            this.sortAToZToolStripMenuItem.Click += new System.EventHandler(this.btnSortAZ_Click);
             // 
             // sortZToAToolStripMenuItem
             // 
             this.sortZToAToolStripMenuItem.Name = "sortZToAToolStripMenuItem";
-            this.sortZToAToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
+            this.sortZToAToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.sortZToAToolStripMenuItem.Text = "Sort Z to A";
+            this.sortZToAToolStripMenuItem.Click += new System.EventHandler(this.btnSortZA_Click);
             // 
             // saveAndSearchToolStripMenuItem
             // 
@@ -155,14 +159,16 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(166, 34);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // searchToolStripMenuItem
             // 
             this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(166, 34);
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.searchToolStripMenuItem.Text = "Search";
+            this.searchToolStripMenuItem.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
@@ -217,7 +223,7 @@
             this.groupBox2.Controls.Add(this.tbxSearch);
             this.groupBox2.Location = new System.Drawing.Point(1184, 678);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(559, 192);
+            this.groupBox2.Size = new System.Drawing.Size(677, 192);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Search";
@@ -238,7 +244,7 @@
             this.lstSearch.ItemHeight = 20;
             this.lstSearch.Location = new System.Drawing.Point(23, 42);
             this.lstSearch.Name = "lstSearch";
-            this.lstSearch.Size = new System.Drawing.Size(511, 484);
+            this.lstSearch.Size = new System.Drawing.Size(630, 484);
             this.lstSearch.TabIndex = 7;
             // 
             // groupBox3
@@ -377,7 +383,7 @@
             this.groupBox4.Controls.Add(this.lstSearch);
             this.groupBox4.Location = new System.Drawing.Point(1184, 96);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(559, 555);
+            this.groupBox4.Size = new System.Drawing.Size(677, 555);
             this.groupBox4.TabIndex = 9;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Search Results";
@@ -422,7 +428,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(307, 42);
+            this.label10.Location = new System.Drawing.Point(321, 42);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 20);
             this.label10.TabIndex = 10;
@@ -431,7 +437,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(420, 42);
+            this.label11.Location = new System.Drawing.Point(526, 42);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(76, 20);
             this.label11.TabIndex = 10;
@@ -450,7 +456,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1768, 942);
+            this.ClientSize = new System.Drawing.Size(1886, 942);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
