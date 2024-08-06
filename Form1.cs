@@ -37,7 +37,7 @@ namespace SD6503BenchmarkAppAssignment1
             try
             {
                 // Validate inputs before adding a new staff member
-                if (ValidateInputs())
+                if (!ValidateInputs())
                 {
                     // Create a new staff object with the provided inputs
                     MyClass newStaff = new MyClass
@@ -248,6 +248,11 @@ namespace SD6503BenchmarkAppAssignment1
                 // Display error message if any exception occurs
                 MessageBox.Show($"Error appending staff data: {ex.Message}", "File IO Error");
             }
+        }
+
+        private void tbxID_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
