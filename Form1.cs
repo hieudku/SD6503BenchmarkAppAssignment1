@@ -37,7 +37,7 @@ namespace SD6503BenchmarkAppAssignment1
             try
             {
                 // Validate inputs before adding a new staff member
-                if (!ValidateInputs())
+                if (ValidateInputs())
                 {
                     // Create a new staff object with the provided inputs
                     MyClass newStaff = new MyClass
