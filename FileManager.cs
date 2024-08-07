@@ -5,7 +5,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace SD6503BenchmarkAppAssignment1
 {
-    class FileManager
+    public class FileManager
     {
         // File path to store staff data
         private string filePath = "staffData.txt";

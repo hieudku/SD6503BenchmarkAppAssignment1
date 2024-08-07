@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace SD6503BenchmarkAppAssignment1
 {
     // This class provides methods to filter and sort a list of MyClass objects
-    class Filter
+    public class Filter
     {
         // Method to sort a list of MyClass objects in ascending order by Name
         public List<MyClass> SortAZ(List<MyClass> sList)

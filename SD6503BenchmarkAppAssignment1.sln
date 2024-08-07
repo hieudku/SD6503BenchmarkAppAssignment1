@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD6503BenchmarkAppAssignment1", "SD6503BenchmarkAppAssignment1.csproj", "{3B266FFE-D626-48C0-A32A-BAC3A5224E19}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffAppUnitTestProject", "..\StaffAppUnitTestProject\StaffAppUnitTestProject.csproj", "{450094B1-DB4F-41B1-B709-E1A52B9C4E1B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{3B266FFE-D626-48C0-A32A-BAC3A5224E19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B266FFE-D626-48C0-A32A-BAC3A5224E19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B266FFE-D626-48C0-A32A-BAC3A5224E19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450094B1-DB4F-41B1-B709-E1A52B9C4E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450094B1-DB4F-41B1-B709-E1A52B9C4E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450094B1-DB4F-41B1-B709-E1A52B9C4E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450094B1-DB4F-41B1-B709-E1A52B9C4E1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
