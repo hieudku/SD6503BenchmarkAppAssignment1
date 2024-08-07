@@ -8,7 +8,7 @@ namespace SD6503BenchmarkAppAssignment1
     public class FileManager
     {
         // File path to store staff data
-        private string filePath = "staffData.txt";
+        private string filePath = "StaffData.txt";
 
         // Method to load all staff data from the text file
         public List<MyClass> LoadStaff()
