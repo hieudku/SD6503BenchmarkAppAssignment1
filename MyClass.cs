@@ -18,7 +18,7 @@ namespace SD6503BenchmarkAppAssignment1
         // Convert class object into string to display data
         public override string ToString()
         {
-            return $"{StaffId}                {Name}       {DateOfBirth:yyyy-MM-dd}   {Email}    {AnnualSalary}";
+            return $"{StaffId} {Name} {DateOfBirth:dd/MM/yyyy} {Email} {AnnualSalary:N0}";
         }
     }
 }

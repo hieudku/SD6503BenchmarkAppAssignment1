@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SD6503BenchmarkAppAssignmen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StaffAppUnitTestProject", "..\StaffAppUnitTestProject\StaffAppUnitTestProject.csproj", "{450094B1-DB4F-41B1-B709-E1A52B9C4E1B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C37DA357-9B15-44B8-B1B9-2D340F886948}"
+	ProjectSection(SolutionItems) = preProject
+		bin\Debug\SD6503BenchmarkAppAssignment1.exe = bin\Debug\SD6503BenchmarkAppAssignment1.exe
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
